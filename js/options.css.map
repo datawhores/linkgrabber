@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/components/Options.css"],
+  "sourcesContent": [".BadDomainsActionCol {\n  width: 5em;\n}\n"],
+  "mappings": ";AAAA,CAAC;AACC,SAAO;AACT;",
+  "names": []
+}

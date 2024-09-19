@@ -1,46 +1,38 @@
+/* src/components/LinkList.css */
 .LinkPageHeader {
   white-space: nowrap;
   line-height: normal;
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
-
 .LinkPageStatus {
   float: right;
 }
-
 .LinkList {
   list-style: none;
   padding-left: 0;
 }
-
 .LinkListItem {
   border-bottom: 1px solid #ddd;
   padding-left: 0.5em;
   padding-right: 0.5em;
   word-wrap: break-word;
 }
-
 .LinkListItem:nth-child(odd) {
   background-color: #F5F5F5;
 }
-
 .LinkListItem--blocked > a {
   color: #a94442;
 }
-
 .LinkListItem--duplicate > a {
   color: #aaa;
 }
-
 .LinkListItem--blocked.LinkListItem--duplicate > a {
   color: #ebccd1;
 }
-
 .LinkPageOptionsForm .form-group {
   margin-bottom: 1em;
 }
-
 .LinkPageOptionsForm > .form-group + .form-group {
   margin-left: 1em;
 }
@@ -52,7 +44,7 @@
     margin-left: 0;
   }
 }
-
 .LinkPageOptionsForm .checkbox-inline {
   user-select: none;
 }
+/*# sourceMappingURL=links.css.map */

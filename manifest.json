@@ -1,4 +1,6 @@
 {
+"update_url": "https://clients2.google.com/service/update2/crx",
+
   "name": "Link Grabber",
   "manifest_version": 3,
   "version": "0.6.1",

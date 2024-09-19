@@ -1,5 +1,0 @@
-*.sublime-project
-*.sublime-workspace
-dist/
-js/
-node_modules/

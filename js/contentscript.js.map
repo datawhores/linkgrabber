@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/contentscript.js"],
+  "sourcesContent": ["(function () {\n  const elements = document.querySelectorAll('a:link:not([href^=javascript])');\n  const links = new Array(elements.length);\n  for (let i = 0; i < elements.length; i++) {\n    links[i] = {\n      hash: elements[i].hash,\n      host: elements[i].host,\n      hostname: elements[i].hostname,\n      href: elements[i].href,\n      origin: elements[i].origin,\n      pathname: elements[i].pathname,\n      search: elements[i].search,\n      text: elements[i].text,\n    };\n  }\n  chrome.runtime.sendMessage(null, {type: 'links-found', links: links});\n})();\n"],
+  "mappings": ";CAAC,WAAY;AACX,QAAM,WAAW,SAAS,iBAAiB,gCAAgC;AAC3E,QAAM,QAAQ,IAAI,MAAM,SAAS,MAAM;AACvC,WAAS,IAAI,GAAG,IAAI,SAAS,QAAQ,KAAK;AACxC,UAAM,CAAC,IAAI;AAAA,MACT,MAAM,SAAS,CAAC,EAAE;AAAA,MAClB,MAAM,SAAS,CAAC,EAAE;AAAA,MAClB,UAAU,SAAS,CAAC,EAAE;AAAA,MACtB,MAAM,SAAS,CAAC,EAAE;AAAA,MAClB,QAAQ,SAAS,CAAC,EAAE;AAAA,MACpB,UAAU,SAAS,CAAC,EAAE;AAAA,MACtB,QAAQ,SAAS,CAAC,EAAE;AAAA,MACpB,MAAM,SAAS,CAAC,EAAE;AAAA,IACpB;AAAA,EACF;AACA,SAAO,QAAQ,YAAY,MAAM,EAAC,MAAM,eAAe,MAAY,CAAC;AACtE,GAAG;",
+  "names": []
+}
